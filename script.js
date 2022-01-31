@@ -1,4 +1,4 @@
-function plus() {
+function plus1() {
 	let num1, num2;
 	num1 = document.getElementById('n1').value;
 	num1 = parseInt(num1);
@@ -9,7 +9,7 @@ function plus() {
 
 	document.getElementById('out').innerHTML = result
 }
-function minus() {
+function minus1() {
 	let num1, num2;
 	num1 = document.getElementById('n1').value;
 	num1 = parseInt(num1);
