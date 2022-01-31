@@ -5,19 +5,33 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>rezume</title>
+	<link rel="stylesheet" href="/style.css">
+	<title>Calc</title>
 </head>
 
 <body>
-	<h1>Hello world</h1>
-	<h2>Hello world</h2>
-	<h3>Hello world</h3>
-	<h4>Hello world</h4>
-	<h5>Hello world</h5>
-	<li>Новая строка</li>
-	<li>agane</li>
-	<li>И снова</li>
+	<div class="Sample1">
+		<p>Число 1:
+			<input type="text" id="n1">
+		</p>
+		<p>Число 2:
+			<input type="text" id="n2">
+		</p>
+		<button onclick="plus()">Сложить</button>
+		<button onclick="minus()">Вычесть</button>
+		<hr>
+		<p id="out">Результат</p>
+	</div>
+
+	<div class="calc">
+		<div class="calc-screen">
+			<p>0</p>
+		</div>
+	</div>
+
+	<img src="/pic/Ivan.jpg"="">alt
 
 </body>
+<script src="/script.js" defer></script>
 
 </html>
