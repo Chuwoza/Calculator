@@ -56,7 +56,7 @@ document.querySelector('.buttons').onclick = (event) => {
 	}
 	// нажата =
 	if (x.length >= 8) {
-		x = "много"
+		x = "много";
 	}
 
 	if (key === '=') {
