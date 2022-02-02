@@ -14,14 +14,12 @@ flex-direction: row;
 		display: block;
 		width: 50%;
 		background-color: green;
-		/* overflow-y: scroll; */
 }
 .right {
 		height: 400px;
 		background-color: red;
 		display: block;
 		width: 50%;
-		/* overflow-y: scroll; */
 }
 .Sample1 {
   background: forestgreen;
