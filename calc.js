@@ -34,7 +34,7 @@ document.querySelector('.buttons').onclick = (event) => {
 	if (number.includes(key)) {
 		if (y === '' && symbol === '') {
 			x += key;
-			if (parseFloat(x) > 999999) {
+			if (parseFloat(x) > 999999999) {
 				console.log('сработал return');
 				out.textContent = 'Error...'
 				return;
@@ -47,24 +47,24 @@ document.querySelector('.buttons').onclick = (event) => {
 		}
 		else {
 			y += key;
-			if (parseFloat(y) > 999999) {
+			if (parseFloat(y) > 999999999) {
 				console.log('сработал return');
 				out.textContent = 'Error...'
 				return;
 			}
 			out.textContent = y;
 		}
-		console.log("x=", x, "y=", y, symbol);
+		console.log("x=", x, symbol, "y=", y);
 		return;
 	}
 	//если нажата кнопка + - / * 
 	if (operation.includes(key)) {
 		symbol = key;
-		out.textContent = symbol.substring(0, 7);
-		console.log("x=", x, "y=", y, symbol);
+		out.textContent = symbol.substring(0, 10);
+		console.log("x=", x, symbol, "y=", y);
 	}
 	// нажата =
-	if (x.length >= 7) {
+	if (x.length >= 9) {
 		out.textContent = "Error...";
 		return;
 	}
@@ -75,17 +75,17 @@ document.querySelector('.buttons').onclick = (event) => {
 			case '+':
 				x = (+x) + (+y);
 				x = String(x);
-				x = x.substring(0, 7);
+				x = x.substring(0, 9);
 				break;
 			case '-':
 				x = (x) - (y)
 				x = String(x);
-				x = x.substring(0, 7);
+				x = x.substring(0, 9);
 				break;
 			case '*':
 				x = (x) * (y);
 				x = String(x);
-				x = x.substring(0, 7);
+				x = x.substring(0, 9);
 				break;
 			case '/':
 				if (y === '0') {
@@ -97,11 +97,11 @@ document.querySelector('.buttons').onclick = (event) => {
 				}
 				x = ((x) / (y)).toFixed(2);;
 				x = String(x);
-				x = x.substring(0, 7);
+				x = x.substring(0, 9);
 				break;
 		}
 		end = true;
 		out.textContent = x;
-		console.log(x, y, symbol);
+		console.log("x=", x, symbol, "y=", y);
 	}
 };
