@@ -104,3 +104,8 @@ flex-direction: row;
 .btn.bg-orange {
 	background: #ff9501;
 }
+.dev {
+    text-align: center;
+    font-size: 0.6rem;
+    margin-top: 5px;
+}
